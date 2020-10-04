@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MovieTask' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MovieTask
+
+  pod 'Cosmos'
+  pod 'PKHUD'
+  pod 'Nuke'
+  pod 'Unrealm'
+  pod 'SwiftLint'
+
+  target 'MovieTaskTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MovieTaskUITests' do
+    # Pods for testing
+  end
+
+end

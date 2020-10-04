@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-MovieTask/Pods-MovieTask-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
+${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
+${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/RuntimeNew/RuntimeNew.framework
+${BUILT_PRODUCTS_DIR}/Unrealm/Unrealm.framework
