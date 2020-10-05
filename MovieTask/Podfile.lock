@@ -1,46 +1,38 @@
 PODS:
+  - Alamofire (5.2.1)
   - Cosmos (22.1.0)
+  - MBProgressHUD (1.2.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - Nuke (9.1.2)
-  - PKHUD (5.3.0)
-  - Realm (5.0.3):
-    - Realm/Headers (= 5.0.3)
-  - Realm/Headers (5.0.3)
-  - RealmSwift (5.0.3):
-    - Realm (= 5.0.3)
-  - RuntimeNew (2.1.5)
   - SwiftLint (0.40.3)
-  - Unrealm (1.3.5):
-    - RealmSwift (= 5.0.3)
-    - RuntimeNew (= 2.1.5)
 
 DEPENDENCIES:
   - Cosmos
+  - MBProgressHUD
+  - Moya
   - Nuke
-  - PKHUD
   - SwiftLint
-  - Unrealm
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Cosmos
+    - MBProgressHUD
+    - Moya
     - Nuke
-    - PKHUD
-    - Realm
-    - RealmSwift
-    - RuntimeNew
     - SwiftLint
-    - Unrealm
 
 SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Nuke: dd2e6be6a34c042a7861e190632781d11f253026
-  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
-  Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
-  RealmSwift: 493c9f089cd3893b3959007973c0e4f640906ba0
-  RuntimeNew: ef34cf1783be4c1cbe798970bc590924dab5df87
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
-  Unrealm: ba1c168935344084ba28dd6bff5ded86f4837d7f
 
-PODFILE CHECKSUM: 54ce2c6e02cb9e2e49bf6601228358b39a3a4e67
+PODFILE CHECKSUM: d768067c78c7fbb3c4d7cecba1adaa99a8416dab
 
 COCOAPODS: 1.9.3

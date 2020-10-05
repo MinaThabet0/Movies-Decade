@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPr-xc-105" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="0.0" y="37.5" width="120" height="20"/>
+                                <rect key="frame" x="0.0" y="37.5" width="121.5" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
@@ -43,6 +43,7 @@
                             <constraint firstItem="XnZ-9I-Qfk" firstAttribute="centerY" secondItem="kJI-EQ-MUu" secondAttribute="centerY" id="Atn-FR-4yz"/>
                             <constraint firstItem="XnZ-9I-Qfk" firstAttribute="width" secondItem="akL-Ie-s8f" secondAttribute="width" multiplier="0.15625" id="XBu-iX-AnS"/>
                             <constraint firstItem="kJI-EQ-MUu" firstAttribute="top" secondItem="akL-Ie-s8f" secondAttribute="top" constant="8" id="Xob-4e-uEq"/>
+                            <constraint firstItem="pPr-xc-105" firstAttribute="width" secondItem="akL-Ie-s8f" secondAttribute="width" multiplier="0.4" id="mfo-gU-Ws0"/>
                             <constraint firstItem="XnZ-9I-Qfk" firstAttribute="leading" secondItem="kJI-EQ-MUu" secondAttribute="trailing" constant="8" id="o4T-V3-B8P"/>
                             <constraint firstItem="pPr-xc-105" firstAttribute="top" secondItem="kJI-EQ-MUu" secondAttribute="bottom" constant="10" id="tvr-aK-C6w"/>
                             <constraint firstItem="pPr-xc-105" firstAttribute="leading" secondItem="akL-Ie-s8f" secondAttribute="leading" id="w5T-eA-7Lg"/>

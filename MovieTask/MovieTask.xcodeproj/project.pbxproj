@@ -30,6 +30,17 @@
 		FA44D44A252939D8002E4937 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44D449252939D8002E4937 /* UITableView+Extension.swift */; };
 		FA44D44C252939E6002E4937 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44D44B252939E6002E4937 /* UICollectionView+Extension.swift */; };
 		FA846B23252A7E45006B08F7 /* DataSourceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846B22252A7E45006B08F7 /* DataSourceMode.swift */; };
+		FA846B25252A9277006B08F7 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846B24252A9277006B08F7 /* MovieDetailsViewController.swift */; };
+		FA846B29252A92A9006B08F7 /* FlickrPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846B27252A92A9006B08F7 /* FlickrPhotoCell.swift */; };
+		FA846B2A252A92A9006B08F7 /* FlickrPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA846B28252A92A9006B08F7 /* FlickrPhotoCell.xib */; };
+		FAA40776252B7567006D2B99 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA40775252B7567006D2B99 /* Config.swift */; };
+		FAA4077A252B7D70006D2B99 /* FlickrApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA40779252B7D70006D2B99 /* FlickrApi.swift */; };
+		FAA4077C252B7F26006D2B99 /* FlickrNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4077B252B7F26006D2B99 /* FlickrNetworkManager.swift */; };
+		FAA4077E252B8014006D2B99 /* FlickrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4077D252B8014006D2B99 /* FlickrModel.swift */; };
+		FAA828B3252B9FB400196EE4 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA828B2252B9FB400196EE4 /* MovieDetailViewModel.swift */; };
+		FAA828B5252B9FE200196EE4 /* FlickrCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA828B4252B9FE200196EE4 /* FlickrCellViewModel.swift */; };
+		FAA828B8252BB54700196EE4 /* EmtyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA828B6252BB54700196EE4 /* EmtyCollectionCell.swift */; };
+		FAA828B9252BB54700196EE4 /* EmtyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA828B7252BB54700196EE4 /* EmtyCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +96,17 @@
 		FA44D449252939D8002E4937 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		FA44D44B252939E6002E4937 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		FA846B22252A7E45006B08F7 /* DataSourceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMode.swift; sourceTree = "<group>"; };
+		FA846B24252A9277006B08F7 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		FA846B27252A92A9006B08F7 /* FlickrPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoCell.swift; sourceTree = "<group>"; };
+		FA846B28252A92A9006B08F7 /* FlickrPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickrPhotoCell.xib; sourceTree = "<group>"; };
+		FAA40775252B7567006D2B99 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FAA40779252B7D70006D2B99 /* FlickrApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrApi.swift; sourceTree = "<group>"; };
+		FAA4077B252B7F26006D2B99 /* FlickrNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrNetworkManager.swift; sourceTree = "<group>"; };
+		FAA4077D252B8014006D2B99 /* FlickrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrModel.swift; sourceTree = "<group>"; };
+		FAA828B2252B9FB400196EE4 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		FAA828B4252B9FE200196EE4 /* FlickrCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrCellViewModel.swift; sourceTree = "<group>"; };
+		FAA828B6252BB54700196EE4 /* EmtyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmtyCollectionCell.swift; sourceTree = "<group>"; };
+		FAA828B7252BB54700196EE4 /* EmtyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmtyCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				FA01C14A2527B951004DE1F3 /* Movies.swift */,
+				FAA4077D252B8014006D2B99 /* FlickrModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,7 +232,8 @@
 		FA01C14C2527BEA3004DE1F3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				FA01C1502527C100004DE1F3 /* APIService.swift */,
+				FAA40778252B7D00006D2B99 /* FlickrApi */,
+				FAA40777252B7CEA006D2B99 /* Local */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -217,9 +241,8 @@
 		FA01C14D2527BEB1004DE1F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FA44D440252920F1002E4937 /* MovieSearchViewModel.swift */,
-				FA44D4422529210D002E4937 /* MovieCellViewModel.swift */,
-				FA032EB6252A293900E1BD05 /* MoviesPerYearViewModel.swift */,
+				FAA828B0252B9F6500196EE4 /* MovieSearchViewModels */,
+				FAA828B1252B9F7800196EE4 /* MovieDetailsViewModels */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -228,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				FA01C1592527D297004DE1F3 /* MovieCell */,
+				FA846B26252A927E006B08F7 /* FlickrPhotoCell */,
+				FAA828BA252BB54B00196EE4 /* EmptyCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				FA44D447252937DC002E4937 /* MovieListViewController.swift */,
+				FA846B24252A9277006B08F7 /* MovieDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -266,6 +292,61 @@
 				FA846B22252A7E45006B08F7 /* DataSourceMode.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA846B26252A927E006B08F7 /* FlickrPhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA846B27252A92A9006B08F7 /* FlickrPhotoCell.swift */,
+				FA846B28252A92A9006B08F7 /* FlickrPhotoCell.xib */,
+			);
+			path = FlickrPhotoCell;
+			sourceTree = "<group>";
+		};
+		FAA40777252B7CEA006D2B99 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				FA01C1502527C100004DE1F3 /* APIService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		FAA40778252B7D00006D2B99 /* FlickrApi */ = {
+			isa = PBXGroup;
+			children = (
+				FAA40775252B7567006D2B99 /* Config.swift */,
+				FAA40779252B7D70006D2B99 /* FlickrApi.swift */,
+				FAA4077B252B7F26006D2B99 /* FlickrNetworkManager.swift */,
+			);
+			path = FlickrApi;
+			sourceTree = "<group>";
+		};
+		FAA828B0252B9F6500196EE4 /* MovieSearchViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA44D440252920F1002E4937 /* MovieSearchViewModel.swift */,
+				FA44D4422529210D002E4937 /* MovieCellViewModel.swift */,
+				FA032EB6252A293900E1BD05 /* MoviesPerYearViewModel.swift */,
+			);
+			path = MovieSearchViewModels;
+			sourceTree = "<group>";
+		};
+		FAA828B1252B9F7800196EE4 /* MovieDetailsViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAA828B2252B9FB400196EE4 /* MovieDetailViewModel.swift */,
+				FAA828B4252B9FE200196EE4 /* FlickrCellViewModel.swift */,
+			);
+			path = MovieDetailsViewModels;
+			sourceTree = "<group>";
+		};
+		FAA828BA252BB54B00196EE4 /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAA828B6252BB54700196EE4 /* EmtyCollectionCell.swift */,
+				FAA828B7252BB54700196EE4 /* EmtyCollectionCell.xib */,
+			);
+			path = EmptyCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +461,8 @@
 				FA01C12425279CEA004DE1F3 /* LaunchScreen.storyboard in Resources */,
 				FA01C12125279CEA004DE1F3 /* Assets.xcassets in Resources */,
 				FA01C1542527C185004DE1F3 /* movies.json in Resources */,
+				FA846B2A252A92A9006B08F7 /* FlickrPhotoCell.xib in Resources */,
+				FAA828B9252BB54700196EE4 /* EmtyCollectionCell.xib in Resources */,
 				FA01C11F25279CE9004DE1F3 /* Main.storyboard in Resources */,
 				FA01C1582527CC46004DE1F3 /* MovieCell.xib in Resources */,
 			);
@@ -509,17 +592,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA4077A252B7D70006D2B99 /* FlickrApi.swift in Sources */,
 				FA01C1512527C100004DE1F3 /* APIService.swift in Sources */,
 				FA44D44C252939E6002E4937 /* UICollectionView+Extension.swift in Sources */,
+				FA846B29252A92A9006B08F7 /* FlickrPhotoCell.swift in Sources */,
+				FAA828B8252BB54700196EE4 /* EmtyCollectionCell.swift in Sources */,
 				FA032EB7252A293900E1BD05 /* MoviesPerYearViewModel.swift in Sources */,
 				FA01C11825279CE9004DE1F3 /* AppDelegate.swift in Sources */,
 				FA44D4462529215C002E4937 /* Bindable.swift in Sources */,
+				FAA828B5252B9FE200196EE4 /* FlickrCellViewModel.swift in Sources */,
 				FA01C14B2527B951004DE1F3 /* Movies.swift in Sources */,
 				FA01C1572527CC46004DE1F3 /* MovieCell.swift in Sources */,
 				FA01C11A25279CE9004DE1F3 /* SceneDelegate.swift in Sources */,
 				FA846B23252A7E45006B08F7 /* DataSourceMode.swift in Sources */,
 				FA44D448252937DC002E4937 /* MovieListViewController.swift in Sources */,
+				FA846B25252A9277006B08F7 /* MovieDetailsViewController.swift in Sources */,
+				FAA4077E252B8014006D2B99 /* FlickrModel.swift in Sources */,
+				FAA4077C252B7F26006D2B99 /* FlickrNetworkManager.swift in Sources */,
 				FA44D44A252939D8002E4937 /* UITableView+Extension.swift in Sources */,
+				FAA828B3252B9FB400196EE4 /* MovieDetailViewModel.swift in Sources */,
+				FAA40776252B7567006D2B99 /* Config.swift in Sources */,
 				FA44D4432529210E002E4937 /* MovieCellViewModel.swift in Sources */,
 				FA44D441252920F1002E4937 /* MovieSearchViewModel.swift in Sources */,
 			);

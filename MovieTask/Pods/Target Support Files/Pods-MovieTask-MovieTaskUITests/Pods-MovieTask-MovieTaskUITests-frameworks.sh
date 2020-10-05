@@ -197,22 +197,18 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Moya/Moya.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RuntimeNew/RuntimeNew.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Unrealm/Unrealm.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Moya/Moya.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RuntimeNew/RuntimeNew.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Unrealm/Unrealm.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

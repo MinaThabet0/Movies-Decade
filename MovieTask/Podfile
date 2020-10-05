@@ -6,11 +6,10 @@ target 'MovieTask' do
   use_frameworks!
 
   # Pods for MovieTask
-
+  pod 'Moya'
   pod 'Cosmos'
-  pod 'PKHUD'
+  pod 'MBProgressHUD'
   pod 'Nuke'
-  pod 'Unrealm'
   pod 'SwiftLint'
 
   target 'MovieTaskTests' do

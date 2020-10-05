@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PKHUD
+import MBProgressHUD
 
 class MovieListViewController: UIViewController {
     
@@ -28,17 +28,17 @@ class MovieListViewController: UIViewController {
 extension MovieListViewController {
     func initView() {
         setupNavigationBar()
-        setupNavigationBar()
         initCommonTableView()
         viewModel.getMoviesList()
         bindViewModel()
     }
     
+    // add search controller to navigation bar
     private func setupNavigationBar() {
         navigationItem.searchController = UISearchController(searchResultsController: nil)
         self.definesPresentationContext = true
+        //indicating whether the underlying content is obscured during a search
         navigationItem.searchController?.obscuresBackgroundDuringPresentation = false
-        navigationItem.searchController?.hidesNavigationBarDuringPresentation = false
         
         navigationItem.searchController?.searchBar.sizeToFit()
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -59,8 +59,11 @@ extension MovieListViewController {
         
         viewModel.showLoading.bind { [weak self] show in
             if self != nil  {
-                PKHUD.sharedHUD.contentView = PKHUDSystemActivityIndicatorView()
-                show ? PKHUD.sharedHUD.show() : PKHUD.sharedHUD.hide()
+                if show {
+                    MBProgressHUD.showAdded(to: self!.view, animated: true)
+                }else {
+                    MBProgressHUD.hide(for: self!.view, animated: true)
+                }
             }
         }
     }
@@ -161,6 +164,35 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch viewModel.dataSourceMode {
+        case .anyOrder:
+            switch viewModel.moviesCells.value[indexPath.row] {
+            case .normal(let viewModel):
+                let main = UIStoryboard(name: "Main", bundle: nil)
+                let vc = main.instantiateViewController(withIdentifier: "MovieDetailsViewController") as! MovieDetailsViewController
+                vc.movieViewModel = viewModel
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                print("No Action")
+            }
+            
+        case .search:
+            switch viewModel.moviesSearchCells.value[indexPath.section] {
+            case .search(let viewModel):
+                let main = UIStoryboard(name: "Main", bundle: nil)
+                let vc = main.instantiateViewController(withIdentifier: "MovieDetailsViewController") as! MovieDetailsViewController
+                vc.movieViewModel = viewModel.movies[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                print("No Action")
+            }
+        }
+        
+
     }
     
     

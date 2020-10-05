@@ -1,7 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Cosmos" "${PODS_CONFIGURATION_BUILD_DIR}/Nuke" "${PODS_CONFIGURATION_BUILD_DIR}/PKHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Realm" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift" "${PODS_CONFIGURATION_BUILD_DIR}/RuntimeNew" "${PODS_CONFIGURATION_BUILD_DIR}/Unrealm"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/Cosmos" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Moya" "${PODS_CONFIGURATION_BUILD_DIR}/Nuke"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Cosmos/Cosmos.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Nuke/Nuke.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PKHUD/PKHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Realm/Realm.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RuntimeNew/RuntimeNew.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Unrealm/Unrealm.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "Cosmos" -framework "Nuke" -framework "PKHUD" -framework "Realm" -framework "RealmSwift" -framework "RuntimeNew" -framework "Security" -framework "Unrealm"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Cosmos/Cosmos.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Nuke/Nuke.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "CFNetwork" -framework "CoreGraphics" -framework "Cosmos" -framework "Foundation" -framework "MBProgressHUD" -framework "Moya" -framework "Nuke" -framework "QuartzCore"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
