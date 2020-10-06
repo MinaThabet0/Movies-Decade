@@ -36,7 +36,6 @@ extension MovieListViewController {
     // add search controller to navigation bar
     private func setupNavigationBar() {
         navigationItem.searchController = UISearchController(searchResultsController: nil)
-        self.definesPresentationContext = true
         //indicating whether the underlying content is obscured during a search
         navigationItem.searchController?.obscuresBackgroundDuringPresentation = false
         
