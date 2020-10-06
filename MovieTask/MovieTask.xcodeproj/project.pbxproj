@@ -41,6 +41,9 @@
 		FAA828B5252B9FE200196EE4 /* FlickrCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA828B4252B9FE200196EE4 /* FlickrCellViewModel.swift */; };
 		FAA828B8252BB54700196EE4 /* EmtyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA828B6252BB54700196EE4 /* EmtyCollectionCell.swift */; };
 		FAA828B9252BB54700196EE4 /* EmtyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA828B7252BB54700196EE4 /* EmtyCollectionCell.xib */; };
+		FAA892EE252C6AF100DDEF62 /* MockMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA892ED252C6AF100DDEF62 /* MockMovie.swift */; };
+		FAA892F0252C72FA00DDEF62 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA892EF252C72FA00DDEF62 /* MockService.swift */; };
+		FAA892F2252C79CB00DDEF62 /* MovieSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA892F1252C79CB00DDEF62 /* MovieSearchViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		FAA828B4252B9FE200196EE4 /* FlickrCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrCellViewModel.swift; sourceTree = "<group>"; };
 		FAA828B6252BB54700196EE4 /* EmtyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmtyCollectionCell.swift; sourceTree = "<group>"; };
 		FAA828B7252BB54700196EE4 /* EmtyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmtyCollectionCell.xib; sourceTree = "<group>"; };
+		FAA892ED252C6AF100DDEF62 /* MockMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovie.swift; sourceTree = "<group>"; };
+		FAA892EF252C72FA00DDEF62 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		FAA892F1252C79CB00DDEF62 /* MovieSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +211,9 @@
 		FA01C12D25279CEB004DE1F3 /* MovieTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAA892F1252C79CB00DDEF62 /* MovieSearchViewModelTests.swift */,
+				FAA892EF252C72FA00DDEF62 /* MockService.swift */,
+				FAA892ED252C6AF100DDEF62 /* MockMovie.swift */,
 				FA01C12E25279CEB004DE1F3 /* MovieTaskTests.swift */,
 				FA01C13025279CEB004DE1F3 /* Info.plist */,
 			);
@@ -621,7 +630,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA892EE252C6AF100DDEF62 /* MockMovie.swift in Sources */,
 				FA01C12F25279CEB004DE1F3 /* MovieTaskTests.swift in Sources */,
+				FAA892F0252C72FA00DDEF62 /* MockService.swift in Sources */,
+				FAA892F2252C79CB00DDEF62 /* MovieSearchViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +802,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZKR6MWVF2;
 				INFOPLIST_FILE = MovieTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -797,7 +810,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.egabi.MovieTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -809,6 +822,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZKR6MWVF2;
 				INFOPLIST_FILE = MovieTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -816,7 +830,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.egabi.MovieTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

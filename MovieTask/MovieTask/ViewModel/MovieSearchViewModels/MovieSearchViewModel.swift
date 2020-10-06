@@ -25,12 +25,12 @@ class MovieSearchViewModel {
     let moviesSearchCells = Bindable([MovieSearchTableCellType]())
     
     
-    let apiClient: APIService
+    let apiClient: APIServiceProtocol
     var moviesList: [Movies]
     var moviePerYearList: [MoviesPerYear]
     var dataSourceMode: DataSourceMode
     
-    init(apiClient: APIService = APIService(),moviesList: [Movies] = [], moviePerYearList: [MoviesPerYear] = [], dataSourceMode: DataSourceMode = .anyOrder) {
+    init(apiClient: APIServiceProtocol = APIService(),moviesList: [Movies] = [], moviePerYearList: [MoviesPerYear] = [], dataSourceMode: DataSourceMode = .anyOrder) {
         self.apiClient = apiClient
         self.moviesList = moviesList
         self.moviePerYearList = moviePerYearList
