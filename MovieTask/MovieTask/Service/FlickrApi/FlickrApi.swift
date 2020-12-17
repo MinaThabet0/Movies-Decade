@@ -45,6 +45,7 @@ extension FlickrApi: TargetType {
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         }
     }
+    
     var headers: [String: String]? {
         nil
     }
